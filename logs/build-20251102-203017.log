@@ -1,0 +1,16 @@
+== Build started: Sun Nov  2 20:30:17 EET 2025 ==
+Log file: logs/build-20251102-203017.log
+
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vlad/projects/beagleplay/build
+[1/2] /usr/bin/aarch64-linux-gnu-g++   -std=c++17 -MD -MT CMakeFiles/project_beagleplay.dir/src/hello.cpp.o -MF CMakeFiles/project_beagleplay.dir/src/hello.cpp.o.d -o CMakeFiles/project_beagleplay.dir/src/hello.cpp.o -c /home/vlad/projects/beagleplay/src/hello.cpp
+[2/2] : && /usr/bin/aarch64-linux-gnu-g++   CMakeFiles/project_beagleplay.dir/src/hello.cpp.o -o project_beagleplay   && :
+
+== Build finished: Sun Nov  2 20:30:18 EET 2025 ==

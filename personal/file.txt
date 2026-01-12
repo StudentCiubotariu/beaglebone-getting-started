@@ -1,0 +1,114 @@
+
+# from anywhere
+cd ~/beagleplay
+mkdir -p hello-c && cd hello-c
+
+# Minimal CMake project file (REQUIRED)
+cat > CMakeLists.txt <<'EOF'
+cmake_minimum_required(VERSION 3.16)
+project(hello C)
+set(CMAKE_C_STANDARD 11)
+add_executable(hello hello.c)
+EOF
+
+# Tiny C program
+cat > hello.c <<'EOF'
+#include <stdio.h>
+int main(void){ printf("Hello from AArch64!\n"); return 0; }
+EOF
+
+# Cross toolchain file
+cat > toolchain-aarch64.cmake <<'EOF'
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR aarch64)
+set(CMAKE_C_COMPILER aarch64-linux-gnu-gcc)
+set(CMAKE_CXX_COMPILER aarch64-linux-gnu-g++)
+EOF
+
+# Make sure deps exist
+sudo apt update
+sudo apt install -y cmake ninja-build gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+
+# ✅ Correct command (note the 'c' in cmake and the explicit source '-S .')
+cmake -S . -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=toolchain-aarch64.cmake
+cmake --build build -v
+
+
+COMMANDS ABOVE EXPLAINED
+
+	• cd ~/beagleplay
+	What it does: moves into your working area under your home directory.
+	Why: keeps all Beagle* work in one place.
+
+	• mkdir -p hello-c && cd hello-c
+	mkdir -p hello-c: creates the hello-c folder; -p won’t error if it already exists.
+	&&: only run the next command if the previous succeeds.
+	cd hello-c: enter the project directory.
+
+	• cat > CMakeLists.txt <<'EOF'
+	cmake_minimum_required(VERSION 3.16)
+	project(hello C)
+	set(CMAKE_C_STANDARD 11)
+	add_executable(hello hello.c)
+	EOF
+	
+	Here-doc pattern (cat > file <<'EOF' ... EOF): writes the lines between the two EOFs into CMakeLists.txt.
+	Single quotes around EOF: disable shell expansion; text is written exactly as typed.
+
+	Inside the file:
+
+	cmake_minimum_required(VERSION 3.16): require at least CMake 3.16.
+	project(hello C): name the project hello and declare it uses C.
+	set(CMAKE_C_STANDARD 11): request C11 for the target(s).
+	add_executable(hello hello.c): build an executable named hello from hello.c.
+
+	• cat > hello.c <<'EOF'
+	#include <stdio.h>
+	int main(void){ printf("Hello from AArch64!\n"); return 0; }
+	EOF
+	
+	Creates hello.c: tiny program that prints a line then exits.
+
+	• cat > toolchain-aarch64.cmake <<'EOF'
+	set(CMAKE_SYSTEM_NAME Linux)
+	set(CMAKE_SYSTEM_PROCESSOR aarch64)
+	set(CMAKE_C_COMPILER aarch64-linux-gnu-gcc)
+	set(CMAKE_CXX_COMPILER aarch64-linux-gnu-g++)
+	EOF
+	
+	Creates a CMake toolchain file for cross-compiling to ARM64.
+	
+	Keys:
+
+	CMAKE_SYSTEM_NAME Linux: target OS is Linux (may differ from the host).
+	CMAKE_SYSTEM_PROCESSOR aarch64: target CPU architecture (ARM64).
+	CMAKE_C_COMPILER, CMAKE_CXX_COMPILER: use the cross compilers provided by Ubuntu’s gcc-aarch64-linux-gnu and g++-aarch64-linux-gnu.
+
+	• sudo apt install -y cmake ninja-build gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+	Installs:
+	cmake: build system generator (configure step).
+	ninja-build: fast build tool (the ninja command).
+	gcc-aarch64-linux-gnu: ARM64 cross C compiler.
+	g++-aarch64-linux-gnu: ARM64 cross C++ compiler.
+	-y: auto-answer “yes” to prompts.
+
+	• cmake -S . -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=toolchain-aarch64.cmake
+	
+	Runs CMake’s configure phase.
+	-S .: source directory (where CMakeLists.txt is) is the current folder.
+	-B build: build directory is ./build (keeps sources clean). CMake generates files here (Ninja files, CMakeCache.txt, optionally compile_commands.json).
+	-G Ninja: select Ninja generator (fast parallel builds).
+	-D CMAKE_TOOLCHAIN_FILE=...: tell CMake to use the cross toolchain so output binaries are ARM64, not host x86_64.
+
+Expected result: ends with something like:
+
+	• cmake --build build -v
+	Invokes the build using whatever generator was configured (Ninja).
+	build: path to the build directory created above.
+	-v: verbose—print the exact compile and link commands (you should see aarch64-linux-gnu-gcc ...).
+	Output: produces build/hello (ARM64 ELF).
+
+
+
+This will execute your code localy unstead of working on the board reictly
+qemu-aarch64 ./build/hello

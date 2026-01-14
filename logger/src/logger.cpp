@@ -1,7 +1,8 @@
 // Logger.cpp
-#include "Logger.hpp"
-
+#include "logger.hpp"
+#include "mutex.hpp"
 #include <iostream>   // std::cout, std::endl
+
 
 // Constructor: store name and minimum level
 Logger::Logger(const std::string& name, Level minLevel)
@@ -39,8 +40,7 @@ void Logger::log(Level level, const std::string& msg)
         return; // drop this message
     }
 
-    std::lock_guard<std::mutex> lock(s_mutex);
-
+    std::lock_guard<std::mutex> lock(MutexSingleton::instance());
     // Only here we use std::cout
     std::cout << "[" << levelToString(level)
               << "][" << m_name << "] "

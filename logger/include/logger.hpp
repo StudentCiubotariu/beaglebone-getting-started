@@ -2,7 +2,6 @@
 #pragma once
 
 #include <cstdint>   // std::uint8_t
-#include <mutex>
 #include <string>
 
 /*****************************************************************************************
@@ -53,9 +52,6 @@ public:
 private:
     std::string m_name;                    // logger name
      Level      m_minLevel{ Level::OFF };  // minimum log level
-
-    // One global mutex shared by ALL Logger instances (C++17 inline static)
-    inline static std::mutex s_mutex{};
 
     static const char*  levelToString(Level lvl);
     static std::uint8_t levelValue(Level lvl);

@@ -1,22 +1,63 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
-# Clean logs folder each run
-rm -rf logs
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
+TARGET="${1:-aarch64}"   # DEFAULT = aarch64
+
+GENERATOR=(-G Ninja)
+
+log() {
+  echo
+  echo "==== $1 ===="
+}
+
 mkdir -p logs
 LOGFILE="logs/build-$(date +'%Y%m%d-%H%M%S').log"
-
-# Mirror all output to console AND log file
 exec > >(tee -a "$LOGFILE") 2>&1
 
 echo "== Build started: $(date) =="
+echo "Target: $TARGET"
 echo "Log file: $LOGFILE"
-echo
 
-# Your exact commands
-rm -rf build
-cmake -S . -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=toolchain-aarch64.cmake
-cmake --build build -v
+case "$TARGET" in
+  aarch64)
+    log "Configure aarch64"
+    cmake -S . -B build-aarch64 "${GENERATOR[@]}" \
+      -DCMAKE_TOOLCHAIN_FILE=toolchain-aarch64.cmake
+
+    log "Build aarch64"
+    cmake --build build-aarch64 -v
+
+    echo
+    echo "AArch64 binary:"
+    echo "  build-aarch64/project_beagleplay"
+    echo "Copy to target device and run there."
+    ;;
+  host)
+    log "Configure host"
+    cmake -S . -B build-host "${GENERATOR[@]}"
+
+    log "Build host"
+    cmake --build build-host -v
+
+    echo
+    echo "Run locally:"
+    echo "  ./build-host/project_beagleplay"
+    ;;
+  clean)
+    rm -rf build-aarch64 build-host logs
+    echo "Cleaned build directories"
+    ;;
+  *)
+    echo "Usage:"
+    echo "  ./build.sh        # aarch64 (target deploy)"
+    echo "  ./build.sh host   # host build"
+    echo "  ./build.sh clean"
+    exit 1
+    ;;
+esac
 
 echo
 echo "== Build finished: $(date) =="

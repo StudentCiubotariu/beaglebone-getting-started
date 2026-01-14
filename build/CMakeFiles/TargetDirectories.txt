@@ -1,3 +1,0 @@
-/home/vlad/projects/beagleplay/build/CMakeFiles/project_beagleplay.dir
-/home/vlad/projects/beagleplay/build/CMakeFiles/edit_cache.dir
-/home/vlad/projects/beagleplay/build/CMakeFiles/rebuild_cache.dir

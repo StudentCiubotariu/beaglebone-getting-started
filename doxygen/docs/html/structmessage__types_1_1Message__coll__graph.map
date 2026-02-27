@@ -1,0 +1,4 @@
+<map id="message_types::Message" name="message_types::Message">
+<area shape="rect" id="node1" title="Binary message container." alt="" coords="19,219,210,296"/>
+<area shape="rect" id="node2" href="$structmessage__types_1_1SignalHeader.html" title="Fixed&#45;layout signal header for binary message transport." alt="" coords="5,5,224,156"/>
+</map>

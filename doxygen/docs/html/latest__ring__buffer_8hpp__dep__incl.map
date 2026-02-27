@@ -1,0 +1,10 @@
+<map id="/home/uig18337/projects/personal/App/connection_hub/include/streams/latest_ring_buffer.hpp" name="/home/uig18337/projects/personal/App/connection_hub/include/streams/latest_ring_buffer.hpp">
+<area shape="rect" id="node1" title="Thread&#45;safe ring buffer retaining only the latest published value." alt="" coords="439,5,642,76"/>
+<area shape="rect" id="node2" href="$connection__hub_8hpp.html" title="Connection hub for message passing." alt="" coords="447,124,634,195"/>
+<area shape="rect" id="node3" href="$runnables__internal_8hpp.html" title="Internal runnables for the application." alt="" coords="441,243,640,299"/>
+<area shape="rect" id="node4" href="$runnables_8cpp.html" title="Runnables for the application." alt="" coords="5,354,188,410"/>
+<area shape="rect" id="node5" href="$runnable__app__four_8cpp.html" title="Application runnable name and description." alt="" coords="213,347,415,417"/>
+<area shape="rect" id="node6" href="$runnable__app__one_8cpp.html" title="Application runnable name and description." alt="" coords="439,347,642,417"/>
+<area shape="rect" id="node7" href="$runnable__app__three_8cpp.html" title="Application runnable name and description." alt="" coords="666,347,869,417"/>
+<area shape="rect" id="node8" href="$runnable__app__two_8cpp.html" title="Application runnable name and description." alt="" coords="893,347,1095,417"/>
+</map>

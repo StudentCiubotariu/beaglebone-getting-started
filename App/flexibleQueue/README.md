@@ -1,1 +1,0 @@
- * Dont use assert on closed_ because the closed_ is a runtime state

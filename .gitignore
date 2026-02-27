@@ -1,5 +1,3 @@
 .vscode/
 logs/*
-build-host
-build
-build-aarch64
+App/proto/generated/

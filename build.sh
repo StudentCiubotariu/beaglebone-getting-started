@@ -5,7 +5,6 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 TARGET="${1:-aarch64}"   # DEFAULT = aarch64
-
 GENERATOR=(-G Ninja)
 
 log() {
@@ -21,6 +20,9 @@ echo "== Build started: $(date) =="
 echo "Target: $TARGET"
 echo "Log file: $LOGFILE"
 
+# -------------------------
+# Build
+# -------------------------
 case "$TARGET" in
   aarch64)
     log "Configure aarch64"
@@ -48,7 +50,11 @@ case "$TARGET" in
     ;;
   clean)
     rm -rf build-aarch64 build-host logs
-    echo "Cleaned build directories"
+    echo "Cleaned build directories + logs"
+
+    # Optional: if you generate protobuf into the SOURCE tree:
+    # rm -rf App/proto/generated
+    # echo "Removed App/proto/generated"
     ;;
   *)
     echo "Usage:"

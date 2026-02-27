@@ -1,10 +1,17 @@
-// Logger.cpp
+/**
+ * @file logger.cpp
+ * @brief Logger code for severity-based message output.
+ */
 #include "logger.hpp"
 #include "mutex.hpp"
 #include <iostream>   // std::cout, std::endl
 
+/**
+ * @brief Stores the start time.
+ */
+static auto t0 = std::chrono::steady_clock::now();
 
-// Constructor: store name and minimum level
+// Store name and severity threshold; no side effects.
 Logger::Logger(const std::string& name, Level minLevel)
     : m_name(name),
       m_minLevel(minLevel)
@@ -34,15 +41,14 @@ std::uint8_t Logger::levelValue(Level lvl)
 // Log function: prints "[LEVEL][NAME] msg" if level >= minLevel
 void Logger::log(Level level, const std::string& msg)
 {
-    // Filter: ignore too-low severity
-    if (levelValue(level) > levelValue(m_minLevel))
-    {
-        return; // drop this message
-    }
+    if (levelValue(level) > levelValue(m_minLevel)) return;
+
+    auto now = std::chrono::steady_clock::now();
+    auto ms  = std::chrono::duration_cast<std::chrono::milliseconds>(now - t0).count();
 
     std::lock_guard<std::mutex> lock(MutexSingleton::instance());
-    // Only here we use std::cout
-    std::cout << "[" << levelToString(level)
+    std::cout << ms << "ms "
+              << "[" << levelToString(level)
               << "][" << m_name << "] "
-              << msg << std::endl;
+              << msg << "\n";          // note: no std::endl
 }

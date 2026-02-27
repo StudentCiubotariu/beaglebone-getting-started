@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package message_payload_one;
+
+enum SigStatus {
+  SIG_STATUS_INIT        = 0;
+  SIG_STATUS_OK          = 1;
+  SIG_STATUS_ERROR       = 2;
+  SIG_STATUS_INVALID     = 255;
+}
+
+enum SensorSource {
+  SENSOR_SOURCE_INIT         = 0;
+  SENSOR_SOURCE_FRONT_LEFT   = 1;
+  SENSOR_SOURCE_FRONT_RIGHT  = 2;
+  SENSOR_SOURCE_SIDE_LEFT    = 3;
+  SENSOR_SOURCE_SIDE_RIGHT   = 4;
+  SENSOR_SOURCE_REAR_LEFT    = 5;
+  SENSOR_SOURCE_REAR_RIGHT   = 6;
+  SENSOR_SOURCE_CENTER_FRONT = 7;
+  SENSOR_SOURCE_CENTER_REAR  = 8;
+  SENSOR_SOURCE_INVALID      = 255;
+}
+
+// -----------------------------
+// Signal header
+// -----------------------------
+message SignalHeader {
+  uint32 version              = 1; // semantic uint8
+  SigStatus eSigStatus        = 2;
+  SensorSource eSensorSource  = 3;
+  uint32 reserved0            = 4; // semantic uint8
+  uint32 cycleCounter         = 5; // semantic uint16
+  uint32 measurementCounter   = 6; // semantic uint16
+}
+
+// -----------------------------
+// Message container
+// -----------------------------
+message Message {
+  SignalHeader header = 1;
+  bytes payload = 2;
+}

@@ -1,0 +1,7 @@
+<map id="runnables::internal::runnable_app_three" name="runnables::internal::runnable_app_three">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,164,73"/>
+<area shape="rect" id="node2" href="$classLogger.html#afaac8d8aba7262900267f1e3779bd657" title="Log an informational message." alt="" coords="268,8,367,35"/>
+<area shape="rect" id="node4" href="$classconnection__hub_1_1ConnectionHub_1_1Receiver.html#a98cfa875329ceb913173ef6eeb709ec7" title="Retrieve the latest available message, if any." alt="" coords="212,61,423,102"/>
+<area shape="rect" id="node3" href="$classLogger.html#a6a28c864160aa1d14f49668e591f29b8" title="Log a message with an explicit severity level." alt="" coords="516,5,611,32"/>
+<area shape="rect" id="node5" href="$classconnection__hub_1_1streams_1_1LatestRingBuffer.html#a0090a7848e7c66197205a83c60a2e3ac" title="Retrieve the most recently published value, if any." alt="" coords="471,56,656,112"/>
+</map>

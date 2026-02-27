@@ -1,0 +1,7 @@
+<map id="connection_hub::ConnectionHub::Receiver::try_get_latest" name="connection_hub::ConnectionHub::Receiver::try_get_latest">
+<area shape="rect" id="node1" title="Retrieve the latest available message, if any." alt="" coords="432,71,643,112"/>
+<area shape="rect" id="node2" href="$namespacerunnables_1_1internal.html#a1b70466762ccaee8368ddc9bb9b0d636" title=" " alt="" coords="229,5,380,47"/>
+<area shape="rect" id="node4" href="$namespacerunnables_1_1internal.html#a57e0a35ac39a935f1cb3d6128b2a6d31" title=" " alt="" coords="225,71,384,112"/>
+<area shape="rect" id="node5" href="$namespacerunnables_1_1internal.html#a58593b0e65a85422de521862ca41293c" title=" " alt="" coords="230,136,379,177"/>
+<area shape="rect" id="node3" href="$namespacerunnables.html#a0746e6861ea8066b20c1674a2945a824" title="Start the default application runnable set." alt="" coords="5,78,177,105"/>
+</map>

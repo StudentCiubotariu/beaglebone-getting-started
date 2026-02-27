@@ -1,0 +1,6 @@
+<map id="runnables::internal::runnable_app_one" name="runnables::internal::runnable_app_one">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,155,69"/>
+<area shape="rect" id="node2" href="$classLogger.html#afaac8d8aba7262900267f1e3779bd657" title="Log an informational message." alt="" coords="256,5,355,32"/>
+<area shape="rect" id="node4" href="$classconnection__hub_1_1ConnectionHub_1_1Publisher.html#ae8d1de4f85bff41ff53393580413d44c" title="Publish a message to the associated queue." alt="" coords="203,57,408,98"/>
+<area shape="rect" id="node3" href="$classLogger.html#a6a28c864160aa1d14f49668e591f29b8" title="Log a message with an explicit severity level." alt="" coords="456,5,551,32"/>
+</map>

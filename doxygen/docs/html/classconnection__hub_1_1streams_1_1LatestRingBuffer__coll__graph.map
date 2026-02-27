@@ -1,0 +1,3 @@
+<map id="connection_hub::streams::LatestRingBuffer&lt; T &gt;" name="connection_hub::streams::LatestRingBuffer&lt; T &gt;">
+<area shape="rect" id="node1" title="Ring buffer that overwrites old values and exposes the most recent one." alt="" coords="5,5,191,171"/>
+</map>

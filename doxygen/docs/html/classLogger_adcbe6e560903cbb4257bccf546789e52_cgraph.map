@@ -1,0 +1,4 @@
+<map id="Logger::warn" name="Logger::warn">
+<area shape="rect" id="node1" title="Log a warning message." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$classLogger.html#a6a28c864160aa1d14f49668e591f29b8" title="Log a message with an explicit severity level." alt="" coords="160,5,255,32"/>
+</map>

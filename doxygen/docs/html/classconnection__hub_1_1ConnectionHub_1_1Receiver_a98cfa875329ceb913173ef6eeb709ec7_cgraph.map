@@ -1,4 +1,4 @@
 <map id="connection_hub::ConnectionHub::Receiver::try_get_latest" name="connection_hub::ConnectionHub::Receiver::try_get_latest">
-<area shape="rect" id="node1" title="Retrieve the latest available message, if any." alt="" coords="5,13,216,54"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,216,54"/>
 <area shape="rect" id="node2" href="$classconnection__hub_1_1streams_1_1LatestRingBuffer.html#a0090a7848e7c66197205a83c60a2e3ac" title="Retrieve the most recently published value, if any." alt="" coords="264,5,449,61"/>
 </map>

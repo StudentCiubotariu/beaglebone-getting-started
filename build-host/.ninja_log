@@ -1,0 +1,17 @@
+# ninja log v5
+5	618	1772178705505771616	App/proto/CMakeFiles/proto.dir/generated/message.pb.cc.o	d93d5ddebeacaba4
+0	219	1772178705106742835	logger/CMakeFiles/logger.dir/src/logger.cpp.o	1f64098b47146974
+4	193	1772178705088605164	CMakeFiles/project_beagleplay.dir/main.cpp.o	245e9c3d1c95145b
+219	228	1772178705115811674	logger/liblogger.a	d6b071422fe06487
+0	4	1772178704898035939	/home/vlad/projects/beagleplay/App/proto/generated/message.pb.h	d87426304c4c3c7b
+0	4	1772178704898035939	../App/proto/generated/message.pb.h	d87426304c4c3c7b
+0	4	1772178704898035939	/home/vlad/projects/beagleplay/App/proto/generated/message.pb.cc	d87426304c4c3c7b
+0	4	1772178704898035939	../App/proto/generated/message.pb.cc	d87426304c4c3c7b
+0	20	1772178918990434211	App/proto/libproto.a	283ebaa39b107472
+0	639	1772178919614182926	App/runnables/CMakeFiles/runnables.dir/src/appRunnables/runnable_app_one.cpp.o	b59216bff2036675
+1	651	1772178919633675073	App/runnables/CMakeFiles/runnables.dir/src/appRunnables/runnable_app_three.cpp.o	3cfb1bcc23920072
+1	664	1772178919643421146	App/runnables/CMakeFiles/runnables.dir/src/appRunnables/runnable_app_four.cpp.o	65a62fa7d7a76f28
+1	668	1772178919643421146	App/runnables/CMakeFiles/runnables.dir/src/appRunnables/runnable_app_two.cpp.o	c7487dd6472db60d
+0	724	1772178919701897586	App/runnables/CMakeFiles/runnables.dir/src/runnables.cpp.o	dc5e3381d1e927ae
+724	741	1772178919721389737	App/runnables/librunnables.a	b6745db3e7a75cc0
+741	821	1772178919799358325	project_beagleplay	29d25cdc739a355c

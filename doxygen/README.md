@@ -6,7 +6,7 @@ the platform.
 
 The main motivation behind this project is to **understand and use WebRTC** in an
 embedded environment.
-
+Command to build Doxygen stuff -> in the doxygen folder : doxygen Doxyfile
 ---
 
 ## Project Idea

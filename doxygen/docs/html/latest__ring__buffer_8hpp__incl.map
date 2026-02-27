@@ -1,4 +1,4 @@
-<map id="/home/uig18337/projects/personal/App/connection_hub/include/streams/latest_ring_buffer.hpp" name="/home/uig18337/projects/personal/App/connection_hub/include/streams/latest_ring_buffer.hpp">
+<map id="/home/vlad/projects/beagleplay/App/connection_hub/include/streams/latest_ring_buffer.hpp" name="/home/vlad/projects/beagleplay/App/connection_hub/include/streams/latest_ring_buffer.hpp">
 <area shape="rect" id="node1" title="Thread&#45;safe ring buffer retaining only the latest published value." alt="" coords="337,5,539,76"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,124,148,151"/>
 <area shape="rect" id="node3" title=" " alt="" coords="172,124,243,151"/>

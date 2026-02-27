@@ -1,5 +1,5 @@
 <map id="connection_hub::ConnectionHub::Publisher::publish" name="connection_hub::ConnectionHub::Publisher::publish">
-<area shape="rect" id="node1" title="Publish a message to the associated queue." alt="" coords="423,5,628,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="423,5,628,47"/>
 <area shape="rect" id="node2" href="$namespacerunnables_1_1internal.html#af8be80462671b80375b1b089cdf2e715" title=" " alt="" coords="225,5,375,47"/>
 <area shape="rect" id="node3" href="$namespacerunnables.html#a0746e6861ea8066b20c1674a2945a824" title="Start the default application runnable set." alt="" coords="5,13,177,39"/>
 </map>

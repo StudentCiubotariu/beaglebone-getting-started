@@ -1,0 +1,6 @@
+<map id="connection_hub::streams::LatestRingBuffer::publish" name="connection_hub::streams::LatestRingBuffer::publish">
+<area shape="rect" id="node1" title="Publish a new value into the buffer." alt="" coords="676,5,869,47"/>
+<area shape="rect" id="node2" href="$classconnection__hub_1_1ConnectionHub_1_1Publisher.html#ae8d1de4f85bff41ff53393580413d44c" title=" " alt="" coords="423,5,628,47"/>
+<area shape="rect" id="node3" href="$namespacerunnables_1_1internal.html#af8be80462671b80375b1b089cdf2e715" title=" " alt="" coords="225,5,375,47"/>
+<area shape="rect" id="node4" href="$namespacerunnables.html#a0746e6861ea8066b20c1674a2945a824" title="Start the default application runnable set." alt="" coords="5,13,177,39"/>
+</map>

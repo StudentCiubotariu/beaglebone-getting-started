@@ -2,11 +2,12 @@
 <area shape="rect" id="node1" title="Start the default application runnable set." alt="" coords="5,111,177,138"/>
 <area shape="rect" id="node2" href="$namespacerunnables_1_1internal.html#a1b70466762ccaee8368ddc9bb9b0d636" title=" " alt="" coords="229,71,380,112"/>
 <area shape="rect" id="node7" href="$namespacerunnables_1_1internal.html#af8be80462671b80375b1b089cdf2e715" title=" " alt="" coords="230,5,379,47"/>
-<area shape="rect" id="node9" href="$namespacerunnables_1_1internal.html#a57e0a35ac39a935f1cb3d6128b2a6d31" title=" " alt="" coords="225,136,384,177"/>
-<area shape="rect" id="node10" href="$namespacerunnables_1_1internal.html#a58593b0e65a85422de521862ca41293c" title=" " alt="" coords="230,201,379,243"/>
+<area shape="rect" id="node10" href="$namespacerunnables_1_1internal.html#a57e0a35ac39a935f1cb3d6128b2a6d31" title=" " alt="" coords="225,136,384,177"/>
+<area shape="rect" id="node11" href="$namespacerunnables_1_1internal.html#a58593b0e65a85422de521862ca41293c" title=" " alt="" coords="230,201,379,243"/>
 <area shape="rect" id="node3" href="$classLogger.html#afaac8d8aba7262900267f1e3779bd657" title="Log an informational message." alt="" coords="488,78,587,105"/>
-<area shape="rect" id="node5" href="$classconnection__hub_1_1ConnectionHub_1_1Receiver.html#a98cfa875329ceb913173ef6eeb709ec7" title="Retrieve the latest available message, if any." alt="" coords="432,136,643,177"/>
-<area shape="rect" id="node4" href="$classLogger.html#a6a28c864160aa1d14f49668e591f29b8" title="Log a message with an explicit severity level." alt="" coords="736,78,831,105"/>
-<area shape="rect" id="node6" href="$classconnection__hub_1_1streams_1_1LatestRingBuffer.html#a0090a7848e7c66197205a83c60a2e3ac" title="Retrieve the most recently published value, if any." alt="" coords="691,129,876,185"/>
-<area shape="rect" id="node8" href="$classconnection__hub_1_1ConnectionHub_1_1Publisher.html#ae8d1de4f85bff41ff53393580413d44c" title="Publish a message to the associated queue." alt="" coords="435,5,640,47"/>
+<area shape="rect" id="node5" href="$classconnection__hub_1_1ConnectionHub_1_1Receiver.html#a98cfa875329ceb913173ef6eeb709ec7" title=" " alt="" coords="432,136,643,177"/>
+<area shape="rect" id="node4" href="$classLogger.html#a6a28c864160aa1d14f49668e591f29b8" title="Log a message with an explicit severity level." alt="" coords="740,78,835,105"/>
+<area shape="rect" id="node6" href="$classconnection__hub_1_1streams_1_1LatestRingBuffer.html#a0090a7848e7c66197205a83c60a2e3ac" title="Retrieve the most recently published value, if any." alt="" coords="695,129,880,185"/>
+<area shape="rect" id="node8" href="$classconnection__hub_1_1ConnectionHub_1_1Publisher.html#ae8d1de4f85bff41ff53393580413d44c" title=" " alt="" coords="435,5,640,47"/>
+<area shape="rect" id="node9" href="$classconnection__hub_1_1streams_1_1LatestRingBuffer.html#aff3ee5d7d8bcc16395ec14be622057b0" title="Publish a new value into the buffer." alt="" coords="691,5,884,47"/>
 </map>

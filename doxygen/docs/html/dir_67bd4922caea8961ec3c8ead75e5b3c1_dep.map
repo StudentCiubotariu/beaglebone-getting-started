@@ -1,10 +1,10 @@
-<map id="/home/uig18337/projects/personal/App/runnables" name="/home/uig18337/projects/personal/App/runnables">
-<area shape="rect" id="node2" href="dir_ca53ceb5f13ee5185e78208f4ef81dc6.html" title="include" alt="" coords="189,63,261,111"/>
-<area shape="rect" id="node3" href="dir_bdc924a1064a5059a425a5546e716ada.html" title="src" alt="" coords="93,63,165,111"/>
-<area shape="rect" id="node4" href="dir_b74702bb13d4aa3e549340114684796d.html" title="connection_hub" alt="" coords="5,159,129,207"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000008_000003.html" title="1" alt="" coords="95,141,104,155"/>
-<area shape="rect" id="node5" href="dir_e546037d539dab48998ac54ab76cb525.html" title="logger" alt="" coords="154,159,226,207"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000008_000010.html" title="4" alt="" coords="167,131,177,146"/>
-<area shape="rect" id="clust2" href="dir_67bd4922caea8961ec3c8ead75e5b3c1.html" alt="" coords="82,52,383,121"/>
-<area shape="rect" id="clust1" href="dir_b1617d756d2224e91d37255e84e89ba2.html" title="App" alt="" coords="71,16,394,132"/>
+<map id="/home/vlad/projects/beagleplay/App/runnables" name="/home/vlad/projects/beagleplay/App/runnables">
+<area shape="rect" id="node1" href="dir_b74702bb13d4aa3e549340114684796d.html" title="connection_hub" alt="" coords="26,159,150,207"/>
+<area shape="rect" id="node3" href="dir_ca53ceb5f13ee5185e78208f4ef81dc6.html" title="include" alt="" coords="133,63,205,111"/>
+<area shape="rect" id="node4" href="dir_bdc924a1064a5059a425a5546e716ada.html" title="src" alt="" coords="37,63,109,111"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000008_000003.html" title="1" alt="" coords="85,132,95,147"/>
+<area shape="rect" id="node5" href="dir_e546037d539dab48998ac54ab76cb525.html" title="logger" alt="" coords="349,159,421,207"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000008_000010.html" title="4" alt="" coords="330,140,339,154"/>
+<area shape="rect" id="clust2" href="dir_67bd4922caea8961ec3c8ead75e5b3c1.html" alt="" coords="27,52,328,121"/>
+<area shape="rect" id="clust1" href="dir_b1617d756d2224e91d37255e84e89ba2.html" title="App" alt="" coords="16,16,339,217"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="connection_hub::ConnectionHub::Publisher::publish" name="connection_hub::ConnectionHub::Publisher::publish">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="$classconnection__hub_1_1streams_1_1LatestRingBuffer.html#aff3ee5d7d8bcc16395ec14be622057b0" title="Publish a new value into the buffer." alt="" coords="259,5,452,47"/>
+</map>

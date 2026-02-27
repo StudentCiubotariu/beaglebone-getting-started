@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_89',['error',['../classLogger.html#a52d98131462d3254f76fae8f43b2fa90',1,'Logger']]]
+  ['error_95',['error',['../classLogger.html#a52d98131462d3254f76fae8f43b2fa90',1,'Logger']]]
 ];

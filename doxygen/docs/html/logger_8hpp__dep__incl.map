@@ -1,8 +1,8 @@
-<map id="/home/uig18337/projects/personal/logger/include/logger.hpp" name="/home/uig18337/projects/personal/logger/include/logger.hpp">
-<area shape="rect" id="node1" title="Logger interface for severity&#45;based message output." alt="" coords="469,5,651,61"/>
+<map id="/home/vlad/projects/beagleplay/logger/include/logger.hpp" name="/home/vlad/projects/beagleplay/logger/include/logger.hpp">
+<area shape="rect" id="node1" title="Logger interface for severity&#45;based message output." alt="" coords="463,5,657,61"/>
 <area shape="rect" id="node2" href="$runnable__app__four_8cpp.html" title="Application runnable name and description." alt="" coords="5,109,208,180"/>
 <area shape="rect" id="node3" href="$runnable__app__one_8cpp.html" title="Application runnable name and description." alt="" coords="232,109,435,180"/>
 <area shape="rect" id="node4" href="$runnable__app__three_8cpp.html" title="Application runnable name and description." alt="" coords="459,109,661,180"/>
 <area shape="rect" id="node5" href="$runnable__app__two_8cpp.html" title="Application runnable name and description." alt="" coords="685,109,888,180"/>
-<area shape="rect" id="node6" href="$logger_8cpp.html" title="Logger code for severity&#45;based message output." alt="" coords="912,124,1133,165"/>
+<area shape="rect" id="node6" href="$logger_8cpp.html" title="Logger code for severity&#45;based message output." alt="" coords="913,117,1079,173"/>
 </map>

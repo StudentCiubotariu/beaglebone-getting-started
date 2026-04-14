@@ -3,3 +3,4 @@ logs/*
 App/proto/generated/
 build/*
 build-host/*
+build-host/.*

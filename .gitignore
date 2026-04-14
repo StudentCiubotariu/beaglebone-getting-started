@@ -1,6 +1,17 @@
+# VSCode
 .vscode/
-logs/*
+
+# Logs
+logs/
+
+# Generated protobuf
 App/proto/generated/
-build/*
-build-host/*
-build-host/.*
+
+# Build directories (ignore everything inside)
+build/
+build-host/
+build-aarch64/
+
+# Ninja
+.ninja_deps
+.ninja_log
